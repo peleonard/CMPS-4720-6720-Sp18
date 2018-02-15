@@ -9,6 +9,7 @@ Created on Wed Feb 14 21:43:45 2018
 #%%
 
 ##import the data SPECT
+
 import pandas as pd
 import numpy as np
 from matplotlib.pyplot import *
@@ -25,6 +26,7 @@ SP_test.shape
 #%%
 
 ## Perceptron Learning
+
 SP_train.diagnosis.replace(0, -1, inplace = True)
 SP_test.diagnosis.replace(0, -1, inplace = True)
 # r is the learning rate and Epochs is just the number of epochs 
@@ -47,6 +49,7 @@ def percepLearn_DF(X_train, y_train, X_test, y_test, r, Epochs):
 #%%
 
 ## Implementation of the perceptron learning algorithm 
+    
 weights = np.zeros((9,22))
 accuracyRate = np.zeros(9)
 for i in range(3):
@@ -70,10 +73,17 @@ for i in range(3):
 #
 #arDF.groupby('Epochs')['accuracyRate'].plot(legend=True)
         
-## Plot for Comparision of Accuracy Rates on Different Learning Rates and Epochs        
+## chart for Comparision of Accuracy Rates on Different Learning Rates and Epochs        
 arDF = pd.DataFrame(accuracyRate.reshape((3,3)), 
                     columns=np.array([0.1,1,10]),
                     index=np.array([10,20,30]))
+
+
+#%%
+
+## plot for Comparision of Accuracy Rates on Different Learning Rates and Epochs        
+
+%matplotlib inline
 plt = arDF.plot(xticks = [10,20,30], 
                 title='Plot for Comparision of'
                 'Accuracy Rates on Different Learning Rates and Epochs')
