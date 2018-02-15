@@ -19,6 +19,9 @@ SP_test.shape
 
 
 #%%
+SP_train.diagnosis.replace(0, -1, inplace = True)
+SP_test.diagnosis.replace(0, -1, inplace = True)
+
 def perceptronLearning_DF(X, y, r, numEpochs):
     w = np.zeros(X.shape[1])
     for t in range(numEpochs):
@@ -26,16 +29,10 @@ def perceptronLearning_DF(X, y, r, numEpochs):
             if (np.dot(row, w)*y[i] <= 0):
                 w = w + r*y[i]*row
     return w
-
-
-SP_train.diagnosis.replace(0, -1, inplace = True)
-SP_test.diagnosis.replace(0, -1, inplace = True)
-
 #%%
-w = perceptronLearning_DF(SP_train.iloc[:,1:22], 
-                          SP_train.iloc[:, 0], r = .1, numEpochs=1000)
+w = perceptronLearning_DF(SP_train.iloc[:,1:23], 
+                          SP_train.iloc[:, 0], r = .1, numEpochs=200)
 print(w)
-#%%
 #accuracy rate
 def perceptronLearning_AR(X, y, w):
     fit = X.dot(w)
@@ -45,7 +42,7 @@ def perceptronLearning_AR(X, y, w):
     E = np.sum(fit == y)/len(y)
     return E
 
-accuracyRate = perceptronLearning_AR(SP_test.iloc[:,1:22], SP_test.iloc[:,0], w)
+accuracyRate = perceptronLearning_AR(SP_test.iloc[:,1:23], SP_test.iloc[:,0], w)
 accuracyRate    
 
 

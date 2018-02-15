@@ -7,10 +7,11 @@ Created on Wed Feb 14 21:43:45 2018
 """
 
 #%%
+
 ##import the data SPECT
 import pandas as pd
 import numpy as np
-from decimal import *
+from matplotlib.pyplot import *
 #!cat SPECTtrain.txt
 sp_names = ['F' + str(i) for i in range(23)]
 sp_names[0] = 'diagnosis'
@@ -19,17 +20,21 @@ SP_test = pd.read_csv("SPECTtest.txt", sep=",", names=sp_names)
 SP_train.shape
 SP_test.shape
 
+
+
 #%%
+
 ## Perceptron Learning
 SP_train.diagnosis.replace(0, -1, inplace = True)
 SP_test.diagnosis.replace(0, -1, inplace = True)
-# r is the learning rate and numEpochs is just the number of epochs 
-def percepLearn_DF(X_train, y_train, X_test, y_test, r, numEpochs):
+# r is the learning rate and Epochs is just the number of epochs 
+def percepLearn_DF(X_train, y_train, X_test, y_test, r, Epochs):
     w = np.zeros(X_train.shape[1])
-    for t in range(numEpochs):
+    for t in range(Epochs):
         for i, row in X_train.iterrows():
             if (np.dot(row, w)*y_train[i] <= 0):
                 w = w + r*y_train[i]*row
+    
     fit = X_test.dot(w)
     fit[fit<=0] = -1
     fit[fit>0] = 1
@@ -37,13 +42,44 @@ def percepLearn_DF(X_train, y_train, X_test, y_test, r, numEpochs):
     E = np.sum(fit == y_test)/len(y_test)
     return [w, E]
 
-weights, accuracyRate = percepLearn_DF(X_train = SP_train.iloc[:,1:23], 
-                                       y_train = SP_train.iloc[:, 0], 
-                                       X_test = SP_test.iloc[:,1:23], 
-                                       y_test = SP_test.iloc[:,0], 
-                                       r = .1, numEpochs=50)
 
-print("Fitted weights of perceptron learning (with leanring rate 0.1 and numEpochs 50)"
-      "is: \n {}".format(weights)+  "\n" + 
-      "Accuracy rate is: {:.3f}".format(accuracyRate))
+
+#%%
+
+## Implementation of the perceptron learning algorithm 
+weights = np.zeros((9,22))
+accuracyRate = np.zeros(9)
+for i in range(3):
+    for j in range(3):
+        r = 10**(i-2)
+        nE = 10*(j+1)
+        weights[j+i*3], accuracyRate[j+i*3] = percepLearn_DF(X_train = SP_train.iloc[:,1:23], 
+               y_train = SP_train.iloc[:, 0], 
+               X_test = SP_test.iloc[:,1:23], y_test = SP_test.iloc[:,0], 
+               r = r, Epochs=nE) 
+        print("Fitted weights of the perceptron"
+              "with leanring rate %.2f and Epochs %d" %(r, nE) + 
+              " are:\n {}".format(weights[j+3*i]) +
+              "\n Accuracy Rate is %.3f" %(accuracyRate[j+3*i]))
+        
+
+#%%
+#arDF = pd.DataFrame({'learningRate': np.tile(np.array([0.1,1,10]), 3),
+#                     'Epochs': np.repeat(np.array([10,20,30]), 3),
+#                     'accuracyRate': accuracyRate})
+#
+#arDF.groupby('Epochs')['accuracyRate'].plot(legend=True)
+        
+## Plot for Comparision of Accuracy Rates on Different Learning Rates and Epochs        
+arDF = pd.DataFrame(accuracyRate.reshape((3,3)), 
+                    columns=np.array([0.1,1,10]),
+                    index=np.array([10,20,30]))
+plt = arDF.plot(xticks = [10,20,30], 
+                title='Plot for Comparision of'
+                'Accuracy Rates on Different Learning Rates and Epochs')
+plt.set_xlabel('epochs')
+plt.legend(['learning rate: 0.1', 'learning rate: 1', 'learning rate: 10'])
+
+           
+
 
