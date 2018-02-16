@@ -89,7 +89,7 @@ arDF
 plt = arDF.plot(title='Plot for Comparision of'
                 'Accuracy Rates on Different Learning Rates and Epochs')
 plt.set_xlabel('epochs')
-plt.legend(['learning rate: 0.1', 'learning rate: 1', 'learning rate: 10'])
+plt.legend(['learning rate: 0.01', 'learning rate: 0.1', 'learning rate: 1'])
 
            
 
