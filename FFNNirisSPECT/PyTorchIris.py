@@ -1,31 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue Feb 20 18:18:22 2018
+Created on Thu Feb 22 17:22:53 2018
 
 @author: LZQ
 """
-
 
 #%%
 import torch
 from torch.autograd import Variable
 import pandas as pd
 import numpy as np
-from sklearn.metrics import confusion_matrix
+
+from sklearn.model_selection import train_test_split
+
+
 
 #%%
 
 # Import the training and testing data
-spNames = ['F' + str(i) for i in range(23)]
-spNames[0] = 'diagnosis'
+iris = pd.read_csv("iris.csv", 
+                   names = ['sepLen', 'sepWid', 'petLen', 'petWid', 'class'])
 
-SP_train = pd.read_csv("SPECTtrain.txt", names=spNames)
-SP_train.shape
 
-SP_test = pd.read_csv("SPECTtest.txt", names=spNames)
-SP_test.shape
-
+xTrain, xTest, yTrain, yTest = train_test_split(iris.iloc[:,:4], iris['class'], test_size = .3)
+x.shape
 
 #%%
 
@@ -34,13 +33,13 @@ SP_test.shape
 dtype = torch.FloatTensor
 # N is batch size; D_in is input dimension;
 # H is hidden dimension; D_out is output dimension.
-N, D_in, H1, H2, D_out = 80, SP_train.shape[1]-1, 11, 11, 1
+N, D_in, H1, H2, D_out = 50, xTrain.shape[1]-1, 4, 4, 1
 
 # Convert data from Pandas DataFrame to Numpy Array, 
 # and then to Torch Tensor, and Then to Torch Varaible
-xTorchTensor = torch.from_numpy(np.array(SP_train.iloc[:, 1:23]))
+xTorchTensor = torch.from_numpy(np.array(xTrain))
 x = Variable(xTorchTensor.type(dtype), requires_grad=False)
-yTorchTensor = torch.from_numpy(np.array(SP_train.iloc[:,0]))
+yTorchTensor = torch.from_numpy(np.array(yTrain))
 y = Variable(yTorchTensor.type(dtype), requires_grad=False)
 
 #%%
@@ -113,21 +112,3 @@ yTest_pred = model(xTest)
 testError =  loss_fn(yTest_pred, yTest) 
 print("""Testing error of the 1 hidden layer neural network, with learning 
       rate %f and epoch %d, is %.4f""" %(learning_rate,epoch,testError))
-
-#%%
-threshold = .7
-yTest_predNP = yTest_pred.data.numpy()
-yTest_predNP[yTest_predNP > .5] = 1
-yTest_predNP[yTest_predNP <= .5] = 0
-
-yTestNP = yTest.data.numpy()
-
-tn, fp, fn, tp = confusion_matrix(yTestNP, yTest_predNP).ravel()
-AR = (tn+tp)/(tn+fp+fn+tp)
-Sensitivity = tp/(tp+fn)
-Specifisity = tn/(tn+fp)
-
-
-
-
-
