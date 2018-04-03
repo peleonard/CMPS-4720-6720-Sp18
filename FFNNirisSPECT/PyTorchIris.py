@@ -24,7 +24,7 @@ iris = pd.read_csv("iris.csv",
 
 
 xTrain, xTest, yTrain, yTest = train_test_split(iris.iloc[:,:4], iris['class'], test_size = .3)
-x.shape
+xTrain.shape
 
 #%%
 
