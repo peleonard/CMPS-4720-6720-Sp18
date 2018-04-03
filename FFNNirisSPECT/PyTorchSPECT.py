@@ -115,18 +115,19 @@ print("""Testing error of the 1 hidden layer neural network, with learning
       rate %f and epoch %d, is %.4f""" %(learning_rate,epoch,testError))
 
 #%%
-threshold = .7
+threshold = .5
 yTest_predNP = yTest_pred.data.numpy()
-yTest_predNP[yTest_predNP > .5] = 1
-yTest_predNP[yTest_predNP <= .5] = 0
+yTest_predNP[yTest_predNP > threshold] = 1
+yTest_predNP[yTest_predNP <= threshold] = 0
 
 yTestNP = yTest.data.numpy()
 
 tn, fp, fn, tp = confusion_matrix(yTestNP, yTest_predNP).ravel()
 AR = (tn+tp)/(tn+fp+fn+tp)
-Sensitivity = tp/(tp+fn)
-Specifisity = tn/(tn+fp)
-
+Sens = tp/(tp+fn)
+Spec = tn/(tn+fp)
+print("""The accuracy rate is %.3f, the sensitivity is %.3f, the specificity is 
+      %.3f""" %(AR, Sens, Spec))
 
 
 
