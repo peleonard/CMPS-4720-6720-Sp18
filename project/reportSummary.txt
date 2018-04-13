@@ -1,0 +1,401 @@
+
+                  Epoch:   1/10,
+                  Batch:    0/30,
+                  Training Loss Error:  1.194,
+                  Training Time on 100 Batches: 2 seconds
+                  
+
+                  Epoch:   1/10,
+                  Batch:    5/30,
+                  Training Loss Error:  5.610,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   1/10,
+                  Batch:   10/30,
+                  Training Loss Error:  4.008,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  2.889,
+                  Batch Validation Time: 0 seconds
+I speak better now!
+
+                  Epoch:   1/10,
+                  Batch:   15/30,
+                  Training Loss Error:  3.031,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   1/10,
+                  Batch:   20/30,
+                  Training Loss Error:  2.896,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   1/10,
+                  Batch:   25/30,
+                  Training Loss Error:  2.833,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  2.890,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+
+                  Epoch:   2/10,
+                  Batch:    0/30,
+                  Training Loss Error:  2.954,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   2/10,
+                  Batch:    5/30,
+                  Training Loss Error:  2.964,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   2/10,
+                  Batch:   10/30,
+                  Training Loss Error:  2.705,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  2.520,
+                  Batch Validation Time: 0 seconds
+I speak better now!
+
+                  Epoch:   2/10,
+                  Batch:   15/30,
+                  Training Loss Error:  2.613,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   2/10,
+                  Batch:   20/30,
+                  Training Loss Error:  2.712,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   2/10,
+                  Batch:   25/30,
+                  Training Loss Error:  2.678,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  3.214,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+
+                  Epoch:   3/10,
+                  Batch:    0/30,
+                  Training Loss Error:  2.763,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   3/10,
+                  Batch:    5/30,
+                  Training Loss Error:  2.757,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   3/10,
+                  Batch:   10/30,
+                  Training Loss Error:  2.465,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  2.187,
+                  Batch Validation Time: 0 seconds
+I speak better now!
+
+                  Epoch:   3/10,
+                  Batch:   15/30,
+                  Training Loss Error:  2.367,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   3/10,
+                  Batch:   20/30,
+                  Training Loss Error:  2.340,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   3/10,
+                  Batch:   25/30,
+                  Training Loss Error:  2.292,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  2.044,
+                  Batch Validation Time: 0 seconds
+I speak better now!
+
+                  Epoch:   4/10,
+                  Batch:    0/30,
+                  Training Loss Error:  2.287,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   4/10,
+                  Batch:    5/30,
+                  Training Loss Error:  2.227,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   4/10,
+                  Batch:   10/30,
+                  Training Loss Error:  2.091,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.914,
+                  Batch Validation Time: 0 seconds
+I speak better now!
+
+                  Epoch:   4/10,
+                  Batch:   15/30,
+                  Training Loss Error:  2.150,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   4/10,
+                  Batch:   20/30,
+                  Training Loss Error:  2.222,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   4/10,
+                  Batch:   25/30,
+                  Training Loss Error:  2.233,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.901,
+                  Batch Validation Time: 0 seconds
+I speak better now!
+
+                  Epoch:   5/10,
+                  Batch:    0/30,
+                  Training Loss Error:  2.222,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   5/10,
+                  Batch:    5/30,
+                  Training Loss Error:  2.145,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   5/10,
+                  Batch:   10/30,
+                  Training Loss Error:  2.053,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.903,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+
+                  Epoch:   5/10,
+                  Batch:   15/30,
+                  Training Loss Error:  2.113,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   5/10,
+                  Batch:   20/30,
+                  Training Loss Error:  2.194,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   5/10,
+                  Batch:   25/30,
+                  Training Loss Error:  2.206,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.899,
+                  Batch Validation Time: 0 seconds
+I speak better now!
+
+                  Epoch:   6/10,
+                  Batch:    0/30,
+                  Training Loss Error:  2.194,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   6/10,
+                  Batch:    5/30,
+                  Training Loss Error:  2.128,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   6/10,
+                  Batch:   10/30,
+                  Training Loss Error:  2.031,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.895,
+                  Batch Validation Time: 0 seconds
+I speak better now!
+
+                  Epoch:   6/10,
+                  Batch:   15/30,
+                  Training Loss Error:  2.074,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   6/10,
+                  Batch:   20/30,
+                  Training Loss Error:  2.164,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   6/10,
+                  Batch:   25/30,
+                  Training Loss Error:  2.196,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.911,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+
+                  Epoch:   7/10,
+                  Batch:    0/30,
+                  Training Loss Error:  2.178,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   7/10,
+                  Batch:    5/30,
+                  Training Loss Error:  2.119,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   7/10,
+                  Batch:   10/30,
+                  Training Loss Error:  2.033,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.899,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+
+                  Epoch:   7/10,
+                  Batch:   15/30,
+                  Training Loss Error:  2.088,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   7/10,
+                  Batch:   20/30,
+                  Training Loss Error:  2.169,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   7/10,
+                  Batch:   25/30,
+                  Training Loss Error:  2.192,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.904,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+
+                  Epoch:   8/10,
+                  Batch:    0/30,
+                  Training Loss Error:  2.181,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   8/10,
+                  Batch:    5/30,
+                  Training Loss Error:  2.110,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   8/10,
+                  Batch:   10/30,
+                  Training Loss Error:  2.030,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.896,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+
+                  Epoch:   8/10,
+                  Batch:   15/30,
+                  Training Loss Error:  2.083,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   8/10,
+                  Batch:   20/30,
+                  Training Loss Error:  2.155,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   8/10,
+                  Batch:   25/30,
+                  Training Loss Error:  2.186,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.898,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+
+                  Epoch:   9/10,
+                  Batch:    0/30,
+                  Training Loss Error:  2.170,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   9/10,
+                  Batch:    5/30,
+                  Training Loss Error:  2.107,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   9/10,
+                  Batch:   10/30,
+                  Training Loss Error:  2.008,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.898,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+
+                  Epoch:   9/10,
+                  Batch:   15/30,
+                  Training Loss Error:  2.061,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   9/10,
+                  Batch:   20/30,
+                  Training Loss Error:  2.155,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:   9/10,
+                  Batch:   25/30,
+                  Training Loss Error:  2.168,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.898,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+
+                  Epoch:  10/10,
+                  Batch:    0/30,
+                  Training Loss Error:  2.175,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:  10/10,
+                  Batch:    5/30,
+                  Training Loss Error:  2.102,
+                  Training Time on 100 Batches: 1 seconds
+                  
+
+                  Epoch:  10/10,
+                  Batch:   10/30,
+                  Training Loss Error:  2.011,
+                  Training Time on 100 Batches: 1 seconds
+                  
+Validation Loss Error:  1.898,
+                  Batch Validation Time: 0 seconds
+Sorry I do not speak better, I need to practice more.
+My apologies, I cannot speak better anymore. This is the best I can do.
+Game Over
