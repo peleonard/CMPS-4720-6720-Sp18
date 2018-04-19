@@ -25,7 +25,10 @@ SP_train.shape
 SP_test = pd.read_csv("SPECTtest.txt", names=spNames)
 SP_test.shape
 
+
+
 #%%
+
 
 #clf = GaussianNB()
 #clf.fit(SP_train.iloc[:, 1:23], SP_train.iloc[:, 0])
@@ -54,7 +57,7 @@ print("""The accuracy rate is %.3f, the sensitivity is %.3f, the specificity is
 #%%
 
 clf1 = BernoulliNB()
-clf1.partial_fit(SP_train.iloc[:, 1:23], SP_train.iloc[:, 0], np.array([0, 1]))
+clf1.partial_fit(SP_train.iloc[:, 1:23], SP_train.iloc[:, 0], np.array([0]))
 BernoulliNB(alpha=1.0, binarize=0.0, class_prior=None, fit_prior=True)
 
 yTest_predNB1 = clf.predict(SP_test.iloc[:, 1:23])
@@ -66,3 +69,5 @@ Sens = tp/(tp+fn)
 Spec = tn/(tn+fp)
 print("""The accuracy rate is %.3f, the sensitivity is %.3f, the specificity is 
       %.3f""" %(AR, Sens, Spec))
+
+
