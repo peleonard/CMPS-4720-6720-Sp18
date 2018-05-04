@@ -6,7 +6,7 @@ Created on Wed May  2 20:16:50 2018
 @author: LZQ
 """
 
-#%%
+
 import random
 import math
 import bnNB
@@ -34,8 +34,10 @@ ncol = len(Strain[0])
 # initial parameter for navie bayesian
 q0 = {}
 # the keys are just classes
-q0['1'] = [0.5 for _ in range(ncol)]
-#q0['1'] = [random.random() for _ in range(ncol)]
+
+#q0['1'] = [0.5 for _ in range(ncol)]
+q0['1'] = [random.random() for _ in range(ncol)]
+
 q0['0'] = [1 - q0['1'][i] for i in range(len(q0['1']))]
 
 T = 100
@@ -114,9 +116,8 @@ def EM_NB(fit, testset):
     accu = bnNB.accuracyNB(predTest, testset)
     return accu, predTest
 
-#%% 
-
 accu, predTest = EM_NB(EM_NBFit, Stest)
-print(accu)
+print("""The predictions of test dataset and accuracy for a EM 
+      Bernoulli Naive Bayes on SPECT dastet is \n [%s] \n and %.3f""" %(predTest, accu))
 
   

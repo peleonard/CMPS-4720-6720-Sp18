@@ -12,23 +12,13 @@ import bnNB
 import random
 import math
 
+
 #%%
-# Define a parse text function and return a 2d list
-
-def parseTxtSPECT(filename):
-    dataset = open(filename).read().split("\n")
-    for i in range(len(dataset)):
-        dataset[i] = dataset[i].split(",")
-        for j in range(len(dataset[i])):
-            dataset[i][j] = int(dataset[i][j])
-    return dataset
-
-Strain = parseTxtSPECT("SPECTtrain.txt")
-Stest = parseTxtSPECT("SPECTtest.txt")
+Strain = bnNB.parseTxtSPECT("SPECTtrain.txt")
+Stest = bnNB.parseTxtSPECT("SPECTtest.txt")
 
 
 
-#%% 
 StrainLabeled = []
 for i in range(len(Strain)):
     if i < 4 or i > 75:
@@ -106,7 +96,13 @@ def semiEM_NB(fit, testset):
     accu = bnNB.accuracyNB(predTest, testset)
     return accu, predTest
 
-#%% 
-
 accu, predTest = semiEM_NB(semiNBFit, Stest)
-print(accu)
+print("""The predictions of test dataset and accuracy for a semi-supervised 
+      Bernoulli Naive Bayes on SPECT dastet is \n [%s] \n and %.3f""" %(predTest, accu))
+
+
+
+
+
+
+
