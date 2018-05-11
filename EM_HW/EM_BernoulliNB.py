@@ -11,18 +11,9 @@ import random
 import math
 import bnNB
 #%%
-# Define a parse text function and return a 2d list
 
-def parseTxtSPECT(filename):
-    dataset = open(filename).read().split("\n")
-    for i in range(len(dataset)):
-        dataset[i] = dataset[i].split(",")
-        for j in range(len(dataset[i])):
-            dataset[i][j] = int(dataset[i][j])
-    return dataset
-
-Strain = parseTxtSPECT("SPECTtrain.txt")
-Stest = parseTxtSPECT("SPECTtest.txt")
+Strain = bnNB.parseTxtSPECT("SPECTtrain.txt")
+Stest = bnNB.parseTxtSPECT("SPECTtest.txt")
 
 
 #%%
